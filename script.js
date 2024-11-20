@@ -1,4 +1,3 @@
-// Your array
 let arr = [1, 2, 3, 4];
 
 // Select the output div
@@ -20,7 +19,7 @@ createPromiseWithArray(arr)
         return new Promise((resolve) => {
             setTimeout(() => {
                 const filteredArray = array.filter((num) => num % 2 === 0);
-                output.innerHTML = `Filtered (Even Numbers): ${filteredArray.join(", ")}<br>`;
+                output.innerHTML = `${filteredArray.join(", ")}<br>`;
                 resolve(filteredArray);
             }, 1000);
         });
@@ -30,8 +29,11 @@ createPromiseWithArray(arr)
         return new Promise((resolve) => {
             setTimeout(() => {
                 const transformedArray = filteredArray.map((num) => num * 2);
-                output.innerHTML += `Transformed (Doubled Even Numbers): ${transformedArray.join(", ")}`;
+                output.innerHTML += `${transformedArray.join(", ")}`;
                 resolve(transformedArray);
             }, 2000);
         });
     });
+
+
+
