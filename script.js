@@ -1,3 +1,7 @@
+let arr = [1, 2, 3, 4];
+
+// Select the output div
+let output = document.querySelector("#output");
 function createPromiseWithArray(array) {
     return new Promise((resolve) => {
             resolve(array);
